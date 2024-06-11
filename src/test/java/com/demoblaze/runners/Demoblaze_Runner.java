@@ -13,8 +13,8 @@ import org.junit.runner.RunWith;
     },
     features = "src/test/resources",
         glue = "com/demoblaze/step_definitions",
-        dryRun = true,
-        tags = ""
+        dryRun = false,
+        tags = "@wip"
 
 
 
