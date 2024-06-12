@@ -76,7 +76,8 @@ public class CartPage extends BasePage{
         orderBtn.click();
         fillOutForm();
         purchaseBtn.click();
+        int lastPrice = productPrice();
         okBtn.click();
-        return productPrice();
+        return lastPrice;
     }
 }
