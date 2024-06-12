@@ -484,5 +484,10 @@ for given duration
         new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(time)).until(ExpectedConditions.presenceOfElementLocated(by));
     }
 
+    public static void waitForAlertPresent(long seconds) {
+        new WebDriverWait(Driver.getDriver(),Duration.ofSeconds(seconds)).until(ExpectedConditions.alertIsPresent());
+
+    }
+
 
 }
